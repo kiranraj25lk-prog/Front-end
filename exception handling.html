@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Example</title>
+</head>
+<body>
+
+    <button onclick="test()">Click Me</button>
+    <div id="res"></div>
+
+    <script>
+        function test() {
+            try {
+                var number = 5;
+                var x = number.toUpperCase();
+                alert(x); 
+
+            }
+            catch (err) {
+                document.getElementById("res").innerHTML = err;
+
+            }
+        }
+    </script>
+
+</body>
+</html>
